@@ -20,7 +20,7 @@ const pusher = new Pusher({
     encrypted: true,
 });
 
-const sessionClient = new Dialogflow.sessionClient(config);
+const sessionClient = new Dialogflow.SessionsClient(config);
 
 const sessionPath = sessionClient.sessionPath(projectId, sessionId);
 

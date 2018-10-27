@@ -3,7 +3,7 @@ require('dotenv').config({ path: 'variables.env' });
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const processMessage = ('./process-message');
+const processMessage = require('./process-message');
 
 const app = express();
 
