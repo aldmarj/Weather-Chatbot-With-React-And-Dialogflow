@@ -39,7 +39,7 @@ const processMessage = message => {
     sessionClient
         .detectIntent(request)
         .then(responses => {
-            const result = response[0].queryResult;
+            const result = responses[0].queryResult;
 
             if(result.intent.displayName === 'detect-city'){
                 const city = result.parameters.fields['geo-city'].stringValue;
